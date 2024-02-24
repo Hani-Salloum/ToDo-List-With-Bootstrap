@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5 p-5">
+        <h1 class="mb-3 mx-auto w-25 text-center">Task List</h1>
+        <div class="row mt-5 mb-4 text-center g-3">
+            <div class="col-12 col-md-6">
+                <label for="sort" class="d-inline-block">Sort with : </label>
+                <select id="sort" class="form-select d-inline-block w-50" aria-label="Default select example">
+                    <option selected value="none">None</option>
+                    <option value="date">Due Date</option>
+                    <option value="status">Status</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-6">
+                <label for="search" class="d-inline-block">Search for a task :</label>
+                <input id="search" type="search" class="w-50 d-inline-block form-control" placeholder="Search">
+            </div>
+        </div>
+        <div class="row text-center g-3">
+            <div class="col-12 col-md-6 col-lg-3">
+                <input type="text" class="form-control" placeholder="Task Title" id="title">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <input type="text" class="form-control" placeholder="Task Description" id="description">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <input type="date" class="form-control" placeholder="Due Date" id="date">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <input type="submit" class="btn btn-success" placeholder="Add" id="submit">
+            </div>
+        </div>
+        <div class="task-container mt-5"></div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
